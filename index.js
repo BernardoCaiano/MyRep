@@ -63,5 +63,68 @@ function funcF() {
 }
 //Alinea G
 function funcG() {
-    
+    let a = parseInt(prompt("Digite um número:"))
+    let b = parseInt(prompt("Digite um número:"))
+    if (a > b){
+        console.log("o segundo numero e superior ao primeiro: intervalo inválido.")
+        
+    }
+    else{
+        for (let i = a; i < b ;i++){
+            console.log(i)
+        }
+    }
 }
+//Alinea H
+function funcH() {
+    let num = parseInt(prompt("Digite um número:"))
+    for (let i = 1; i <= 10; i++)
+    {
+        console.log(num + " x " + i + " = " +  num * i)
+    }
+}
+//Alinea I
+function funcI() {
+    let a = parseInt(prompt("Digite um número:"))
+    let b = parseInt(prompt("Digite um número:"))
+    let soma = 0
+    if (a > b){
+        console.log("o segundo numero e superior ao primeiro: intervalo inválido.")
+    }
+    else if (b > a){
+        for (let i = a; i < b ;i++){
+            if (i % 3 == 0){
+                soma += i 
+            }
+        }
+    }
+    console.log("A soma dos numero que sao multiplos de 3 é: " + soma)
+}
+//Alinea J
+function funcJ() {
+    let num = parseInt(prompt("Digite um número:"))
+    let cont = 0
+    for (let i = num; i > 0; i--){
+        if (num % i == 0){
+            cont++
+        }
+    }
+    if (cont > 2){
+        console.log("NÃO")
+    }
+    else{
+        console.log("SIM")
+    }
+}
+//Alinea K
+function funcK() {
+    let num = parseInt(prompt("Digite um número:"))
+    let resultado = 1
+    let cont = 0
+    for (let i = num; i > 0; i--){
+        cont++
+        resultado = resultado * i
+    }
+    console.log(num + "! = " + resultado)
+}
+//Ali
