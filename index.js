@@ -82,7 +82,7 @@ function funcH() {
     {
         console.log(num + " x " + i + " = " +  num * i)
     }
-}
+}3
 //Alinea I
 function funcI() {
     let a = parseInt(prompt("Digite um número:"))
@@ -122,9 +122,69 @@ function funcK() {
     let resultado = 1
     let cont = 0
     for (let i = num; i > 0; i--){
-        cont++
         resultado = resultado * i
     }
     console.log(num + "! = " + resultado)
 }
-//Ali
+//Alinea l 
+function funcL() {
+    let num = parseInt(prompt("Digite um número:"))
+    let soma = 0
+    for (let i = num-1; i > 0; i--){
+        if (num % i == 0){
+            soma += i
+        }
+    }
+    if (soma == num){
+        console.log("SIM")
+    }
+    else{
+        console.log("NÃO")
+    }
+}
+//Alinea M
+function funcM() {
+    let ano = parseInt(prompt("Digite um ano:"))
+    if (ano % 4 == 0 & ano % 100 != 0){
+        console.log("SIM")
+    }
+    else if (ano % 4 == 0 & ano % 100 == 0 & ano % 400 == 0){
+        console.log("SIM")
+    }
+    else{
+        console.log("NÃO")
+    }
+}
+//Alinea N
+function funcN() {
+    let num = parseInt(prompt("Digite um número de 100 a 999 :"))
+    if (num.charAt(0) == num.charAt(2) ) {
+        console.log("SIM")
+    } else {
+        console.log("NÃO")
+    }        
+}
+//Alinea O
+function funcO() {    
+    // Gerar nº aleatório entre 1 e 100
+    let genNum = parseInt((Math.random() * 99) + 1)
+    let attempts = 0
+    let num = 0
+    while (attempts < 5 & num != genNum){
+     
+        attempts++
+        num = parseInt(prompt("Escreva um número"))
+        if (num == genNum){
+            console.log("ADIVINHOU PARABÉNS!")
+        }
+        else if (num > genNum) {
+            console.log("PARA BAIXO!")
+        } else {
+            console.log("PARA CIMA!")
+        }
+    } 
+    if (attempts >= 5) {
+        console.log("EXCEDEU O Nº DE TENTATIVAS!")
+    }
+    
+}
