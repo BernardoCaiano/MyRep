@@ -91,5 +91,53 @@ function funcI() {
 }
 //Alinea J
 function funcJ(palavras, P) {
-    
+    show("J -> " +  palavras[P] )
+}
+//Alinea K
+function funcK() {
+    let N = parseInt(prompt("Indique um numero"))
+    let numeros = []
+    for(let i = 0; i < N-1; i++){
+         numeros.push(i)
+    }
+    show("J -> " +  numeros )
+}
+//Alinea L
+function funcL(numeros) {
+    let novoArray = []
+    for(let i = 0; i < numeros.length; i++){
+        if (numeros[i] % 2 == 0){ 
+            novoArray.push(numeros[i])
+        }
+    }
+    show("L -> " + novoArray)
+}
+//Alinea M 
+function funcM(numeros) {
+    let novoArray = []
+    for(let i = 0; i < numeros.length; i++){
+        novoArray.push(numeros[i] + 1)
+    }
+    show("M -> " + novoArray)
+}
+//Alinea N
+function funcN(numeros, numeros2) {
+    let numeros3 = []
+    let tamArray = numeros.length
+    let tamArray2 = numeros2.length
+    if (tamArray2 > tamArray){
+        let tamanho = tamArray2 - tamArray
+        for(let i = 0; i < numeros2.length; i++){
+            numeros.push(0) * tamanho
+            numeros3[i] = numeros[i] + numeros2[i]
+        }
+    }
+    else {
+        let tamanho = tamArray - tamArray2
+        for(let i = 0; i < numeros.length; i++){
+            numeros2.push(0) * tamanho
+            numeros3[i] = numeros[i] + numeros2[i]
+        }
+    }
+    show("N -> " + numeros3)
 }
