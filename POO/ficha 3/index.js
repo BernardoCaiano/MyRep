@@ -67,7 +67,14 @@ function funcF() {
 }
 //Alinea G 
 function funcG() {
-    let segundos = prompt("Indique os segundos:")
-    let horas = segundos / 3600
-
+    let segundos = parseInt(prompt ("Indique os segundos:"))
+    let segundo = parseInt(segundos % 60)
+    let minutos  = parseInt(segundos / 60)
+    let minuto = parseInt(minutos % 60)
+    let hora = parseInt(minutos / 60) 
+    show(hora + "h + " + minuto + "m + " + segundo + "s")
+}
+//Alinea F
+function funcH() {
+    
 }

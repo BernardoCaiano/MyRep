@@ -109,10 +109,14 @@ function funcC() {
         this.depositoAtual = depositoAtual
         this.tipoCombustivel = tipoCombustivel
     }
+    //alinea i)
     let carro1 = new Carro("Ford", "91-GH-15", "verde", 40, "Gasóleo")
     let carro2 = new Carro("Opel", "23-AB-23", "branco", 50, "Gasolina")
+    //alinea ii)
     show(carro1.cor)
     carro1.cor = prompt("Qual é a cor do carro:")
     show(carro1.cor)
+    //alinea iii)
+    
 }
     
