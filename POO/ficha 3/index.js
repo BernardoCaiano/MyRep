@@ -33,9 +33,9 @@ function funcD() {
     if (str[0] != " " ){
         cont = 1
     }
-    if (str[tamanho-1] == " "){
-        cont--
-    }
+    //if (str[tamanho-1] == " "){
+        //cont--
+    //}
     for (i = 0; i < str.length; i++){
         if (str[i] == " " & str[i+1] != " ") {
             cont++

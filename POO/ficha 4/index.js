@@ -48,6 +48,7 @@ function funcA() {
 }
 //Alinea B
 function funcB() {
+    show("B:")
     let notas = [
         {
         nome: 'Rui',
@@ -113,10 +114,22 @@ function funcC() {
     let carro1 = new Carro("Ford", "91-GH-15", "verde", 40, "Gasóleo")
     let carro2 = new Carro("Opel", "23-AB-23", "branco", 50, "Gasolina")
     //alinea ii)
-    show(carro1.cor)
-    carro1.cor = prompt("Qual é a cor do carro:")
-    show(carro1.cor)
+    function cor() {
+        carro1.cor = prompt("Qual é a nova cor do Ford?")
+        carro2.cor = prompt("Qual é a nova cor do Opel?")
+        show(carro1.cor)
+        show(carro2.cor)
+    }
+    cor()
     //alinea iii)
+    function km() {
+        let kmPercorridos = parseInt(prompt("Quantos km percorreu no Ford?"))
+        let litrosConsumidos = kmPercorridos * 5 / 100
+        show(litrosConsumidos)
+    }
+    km()
+}
+function funcD() {
     
 }
     
