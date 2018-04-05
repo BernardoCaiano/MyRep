@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="ex2.js"></script>
+    <title>Ficha 7 - ex:2</title>
+</head>
+<body>
+    <form id = "frm" action="">
+        <label for="txtNome">Nome:</label>
+        <input type="text" name="" id="txtNome" maxlength="50" required autofocus>
+        <br>
+        <br>
+        <label for="txtMorada">Morada:</label>
+        <input type="text" name="" id="txtMorada">
+        <br>
+        <br>
+        <label for="txtCodPostal">Código Postal:</label>
+        <input type="number" name="" id="txtCodPostal" min="1" max="9999"> - <input type="number" name="" id="txtCodPostal" min="1" max="999">
+        <br>
+        <br>
+        <label for="txtTele">Telemóvel:</label>
+        <input type="number" name="" id="txtTele" min="900000000" max="999999999" required>
+        <br>
+        <br>
+        <label for="txtData">Data de nascimento:</label>
+        <input type="date" name="" id="txtData">
+        <br>
+        <br>
+        <label for="txtLocalidade">Localidade:</label>
+        <input list = "locais" id="txtLocalidade">
+        <datalist id="locais">
+            <option value="Porto">
+            <option value="Barcelona">
+            <option value="Paris">
+            <option value="Lisboa">
+            <option value="Roma">
+        </datalist>
+        <br>
+        <br>
+        <label for="">Sexo:</label>
+        <input type="radio" name="sexo" value="M"> M
+        <input type="radio" name="sexo" value="F"> F
+        <br>
+        <br>
+        <label for="txtEmail">E-mail:</label>
+        <input type="email" name="" id="txtEmail" accesskey="m">
+        <br>
+        <br>
+        Credenciais de acesso:
+        <br>
+        <label for="txtUser">Username:</label>
+        <input type="text" name="" id="txtUser" required>
+        <label for="txtPass1">Password:</label>
+        <input type="password" name="" id="txtPass1" required>
+        <label for="txtPass2">Confirmar a Password:</label>
+        <input type="password" name="" id="txtPass2" required>
+        <br>
+        <br>
+        <label for="">Tamanho de Camisola:</label>
+        <select name="" id="txtCamisola">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+        <br>
+        <br>
+        <label for="txtPagina">Página Pessoal:</label>
+        <input type="url" name="" id="txtPagina">
+        <br>
+        <br>
+        <label for="txtSapatilha">Nº de sapatilha:</label>
+        <input type="number" name="" id="txtSapatilha" min="30" max="50">
+        <br>
+        <br>
+        <label for="txtDesportos">Principais desportos praticados:</label>
+        <br>
+        Running <input type="checkbox" name="" id="chbRunning">
+        Cycling <input type="checkbox" name="" id="chbRunning">
+        Natação <input type="checkbox" name="" id="chbRunning">
+        Futebol <input type="checkbox" name="" id="chbRunning">
+        Vela <input type="checkbox" name="" id="chbRunning">
+        Ténis <input type="checkbox" name="" id="chbRunning">
+        Outros <input type="checkbox" name="" id="chbRunning">
+        <br>
+        <br>
+        <label for="txtObservacoes">Observações:</label>
+        <br>
+        <textarea name="" id="txtObservacoes" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" name="" id="submeter">
+    </form>
+</body>
+</html>
