@@ -1,0 +1,30 @@
+#logo {
+    margin-right: 50px;
+}
+
+#iconMenu{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+#inputProcurar{
+    border-radius: 12px;
+    
+}
+
+input[type="search"], textarea {
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid #ccc !important;
+    }
+
+.btn:focus,.btn:active {
+    outline: none;
+    box-shadow: none !important;
+    border:1px solid #ccc !important;
+ }
+
+#botaoProcurar {
+    margin-left: 2px;
+}
+
