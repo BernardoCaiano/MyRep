@@ -32,6 +32,7 @@ window.onload = function() {
     let inputSalarioMax = document.getElementById("inputSalarioMax")
     let btnEscolherCandidato = document.getElementById("btnEscolherCandidato")
     let btnReset = document.getElementById("btnReset")
+    
 
     btnReset.addEventListener("click", function() {
 
@@ -42,18 +43,32 @@ window.onload = function() {
 
     frmCandidaturas.addEventListener("submit", function(event) {
 
+        let strErro = ""
         if (parseInt(inputSalarioMin.value) > parseInt(inputSalarioMax.value)) {
-            alert("O salário máximo tem de ser superior ao mínimo ")
+            strErro = "O salário máximo tem de ser superior ao mínimo."
+            
             frmCandidaturas.reset()
             inputNome.focus()
         }
-        else {
+        
+        let linguagens = document.querySelectorAll('input[type="checkbox"]:checked').length
+
+        if (linguagens == 0) {
+            strErro += "Selecione pelo menos uma linguagem"
+        }
+       
+
+        if (strErro == "") {
             let novaCandidatura = new Candidatura(inputNome.value, parseInt(inputSalarioMin.value))
             candidaturas.push(novaCandidatura)
             frmCandidaturas.reset()
             inputNome.focus()
             console.log(candidaturas)
         }
+        else {
+            alert(strErro)
+        }
+
         event.preventDefault()
     })
 
