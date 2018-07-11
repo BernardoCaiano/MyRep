@@ -42,17 +42,37 @@ window.onload = function() {
 
     frmCandidaturas.addEventListener("submit", function(event) {
 
-        if (inputSalarioMin.value > inputSalarioMax.value) {
+        if (parseInt(inputSalarioMin.value) > parseInt(inputSalarioMax.value)) {
             alert("O salário máximo tem de ser superior ao mínimo ")
             frmCandidaturas.reset()
             inputNome.focus()
         }
         else {
-            let novaCandidatura = new Candidatura(inputNome.value, inputSalarioMin.value)
+            let novaCandidatura = new Candidatura(inputNome.value, parseInt(inputSalarioMin.value))
             candidaturas.push(novaCandidatura)
+            frmCandidaturas.reset()
+            inputNome.focus()
             console.log(candidaturas)
         }
         event.preventDefault()
     })
+
+    btnEscolherCandidato.addEventListener("click", function(event) {
+        
+        let menorSalario = 0
+        let nome = ""
+        menorSalario = candidaturas[0].salarioMin
+        nome = candidaturas[0].nome
+        for (let i = 1; i < candidaturas.length; i++) {
+            if (candidaturas[i].salarioMin < menorSalario) {
+                menorSalario = candidaturas[i].salarioMin
+                nome = candidaturas[i].nome
+            }
+        }
+        alert("O candidato escolhido foi: " + nome)
+        event.preventDefault()
+    })
+
+    
 
 }
