@@ -5,18 +5,61 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="ex04.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
-      <div class="container">
-          <form action="">
-              <div>
-                  
-              </div>
-          </form>
-      </div>
+    <div class="container">
+      <br>
+      <h3>Submissão de candidaturas a emprego</h3>
+      <br>
+      <form id="frmCandidaturas">
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputNome">Nome</label>
+            <input type="text" maxlength="50" class="form-control" id="inputNome" required>
+          </div>                       
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputSalarioMin">Salário Mínimo</label>
+            <input type="number" step="10" class="form-control" id="inputSalarioMin" required>
+          </div>    
+          <div class="form-group col-md-6">
+            <label for="inputSalarioMax">Salário Máximo</label>
+            <input type="number" step="10" class="form-control" id="inputSalarioMax" required>
+          </div>                    
+        </div>
+        <label for="">Linguagens preferidas</label>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <div class="form-check form-check-inline">
+              <label class="form-check-label mr-3">
+                <input class="form-check-input" type="checkbox" name="" id="" value="C#"> C#
+              </label>
+              <label class="form-check-label mr-3">
+                <input class="form-check-input" type="checkbox" name="" id="" value="Java"> Java
+              </label>
+              <label class="form-check-label mr-3">
+                <input class="form-check-input" type="checkbox" name="" id="" value="JavaScript"> JavaScript
+              </label>
+              <label class="form-check-label mr-3">
+                <input class="form-check-input" type="checkbox" name="" id="" value="Python"> Python
+              </label>
+            </div>
+          </div>                    
+        </div>
+        <!-- Buttons-->
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-dark ">Submeter candidatura</button>
+            <button type="button" id="btnReset" class="btn btn-dark ">Limpar formulário</button>
+            <button id="btnEscolherCandidato" type="button" class="btn btn-dark ">Escolher Candidato</button>
+          </div>
+        </div>
+       </form>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
