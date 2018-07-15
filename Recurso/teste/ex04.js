@@ -57,7 +57,6 @@ window.onload = function() {
             strErro += "Selecione pelo menos uma linguagem"
         }
        
-
         if (strErro == "") {
             let novaCandidatura = new Candidatura(inputNome.value, parseInt(inputSalarioMin.value))
             candidaturas.push(novaCandidatura)
@@ -86,6 +85,7 @@ window.onload = function() {
         }
         alert("O candidato escolhido foi: " + nome)
         event.preventDefault()
+
     })
 
     

@@ -4,14 +4,14 @@ window.onload = function() {
     let btnConverter = document.getElementById("btnConverter")
     let txtNomeConvertido = document.getElementById("txtNomeConvertido")
 
-    btnConverter.addEventListener("click",function(){
+    btnConverter.addEventListener("click", function() {
 
         let stringNome = txtNomeCompleto.value.split(" ")
         
         let str=""
-        for(let i=0; i < stringNome.length; i++){
+        for(let i = 0; i < stringNome.length; i++){
 
-          if(i != stringNome.length-1){
+          if (i != stringNome.length-1) {
             str += stringNome[i].substring(0,1) + ". "
           }
 

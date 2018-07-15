@@ -230,7 +230,7 @@ function viewGameById(id) {
 // Edit game based on its ID
 function editGameById(id) {    
     // Update global variable
-    gameId = id
+    //gameId = id
     // Iterate from all the games and fill the form with the games data
     for (let i = 0; i < games.length; i++) {
         if(games[i].id == id) {
@@ -239,10 +239,10 @@ function editGameById(id) {
             inputPhoto.value = games[i].photo                
             // Check the boxes that belongs to the array games.plataforms
             for (let j = 0; j < nodesPlatform.length; j++) {                
-                if (games[i].platforms.indexOf(
-                    nodesPlatform[j].getAttribute("value")) != -1) {                
+                if (games[i].platforms.indexOf(nodesPlatform[j].getAttribute("value")) != -1) {                
                     nodesPlatform[j].checked = true
-                }  else {
+                }  
+                else {
                     nodesPlatform[j].checked = false
                 }          
             }

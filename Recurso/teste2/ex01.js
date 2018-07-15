@@ -10,7 +10,7 @@ window.onload = function() {
         strNaoCifrada = txtNaoCifrada.value
         let i = 0
         let j = strNaoCifrada.length-1
-        while( i <= j) {
+        while (i <= j) {
             if (i == j) {
                 str +=  strNaoCifrada[i]
             }

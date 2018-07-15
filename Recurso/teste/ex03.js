@@ -46,7 +46,7 @@ window.onload = function() {
     function carregarImagens() {
         let strHtml = ""
         for (let i = 0; i < imagens.length; i++) {
-            strHtml += ` <img src="${imagens[i]}" width="374" height="324">`
+            strHtml += `<img src="${imagens[i]}" width="374" height="324">`
         }
         imgPlace.innerHTML = strHtml
     }
